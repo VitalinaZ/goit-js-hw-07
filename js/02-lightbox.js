@@ -22,4 +22,8 @@ alt="${description}"
 };
 createImg();
 
-new SimpleLightbox('.gallery a');
+new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  captionDelay: 250
+});
